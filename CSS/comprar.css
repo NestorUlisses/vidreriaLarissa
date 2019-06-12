@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: felicidades;
+    src: url(../fonts/BebasNeue-Regular.ttf)
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(147, 165, 255, 0.7);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #06145B;
+    height: 125px;
+    width: 100%;
+
+}
+.imglogo{
+    height: 108px;
+    width: auto;
+    align-items: center;
+    margin: 20px;
+}
+
+/* ul{
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    /* font-size: 20px; */
+
+    /* text-transform: uppercase;
+    font-size: 16px;
+} */
+/* header li{
+    display: inline;
+    padding: 5px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}  */
+
+
+/* --------------------------------------------------------------- */
+h1,h3,p{
+    margin-top: 20px; 
+    font-family: felicidades;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size:17px;
+}
+
+p{
+    height: 30px;
+    color: #122170;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form *{
+    width: 400px;
+    text-align: center;
+    margin: 8px;
+}
+
+form input{
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid #e7e7e7;
+    font-size: 16px;
+}
+
+.agregar{
+    display: block;
+    padding: 5px;
+    background-color: #122170;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.agregar:hover{
+    opacity: 0.8;
+}
+
+section{
+    width: 400px;
+    padding: 5px;
+}
+
+article img{
+    grid-area: imagen;
+    width: 150%;
+    height: auto;
+    padding: 10px;
+}
+
+article p{
+    grid-area: parrafo;
+    text-align: center;
+    color: rgb(44, 95, 214);
+}
+
+article span{
+    grid-area: s_pan;
+    text-align: center;
+}
+
+article{
+    width: 100%;
+    margin: 10px;
+    display: grid;
+    border: 3px solid #122170;
+    border-radius: 15px;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        'imagen parrafo'
+        'imagen s_pan'; 
+}
+
+form > div{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+form > div *{
+    width: 100%;
+}
+
+

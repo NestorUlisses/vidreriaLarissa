@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.imagen {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+}
+
+.imagen img{
+ width: 30%;
+ margin-top: 40px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+body{
+    background: url(../img/corredor\,-vido-164959.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    background: rgba(0, 0, 0, .6);
+    margin: 50px ;
+    margin-top: 15px;
+    color: white;
+    border-radius: 10px;
+    /* padding: 40px; */
+}
+
+.contenedor .toggle{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #122170; 
+    transition: .5s; 
+    cursor: pointer;
+}
+
+.contenedor .toggle h1{
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0.1em 0.1em #122170;
+
+}
+
+.contenedor .toggle:hover{
+    border-top: 2px solid rgb(95, 236, 95);
+}
+
+.contenedor h2{
+    margin: 0 0 28px 0;
+    font-size: 28px;
+}
+
+.contenedor input[type="text"],
+.contenedor input[type="email"],
+.contenedor input[type="password"]{
+    outline: none;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    width: 100%;
+    padding: 9px 6px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 4px solid #122170;
+    font-size: 14px;
+    font-weight: normal; 
+    margin:  0 0 10px 0 ;
+    transition: .5s;
+}
+
+.contenedor input[type="text"]:focus,
+.contenedor input[type="email"]:focus,
+.contenedor input[type="password"]:focus{
+    border-bottom: 4px solid rgb(95, 236, 95);
+}
+
+.contenedor input[type="submit"]{
+    background-color: #122170;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.contenedor input[type="submit"]:hover{
+    background: rgb(95, 236, 95);
+    color: black;
+    
+}
+
+.contenedor .formulario{
+    padding: 40px;
+    display: none;
+}
+.contenedor .formulario:nth-child(2){
+    display: block;
+}
+
+
+@media (min-width: 600px) /* TABLET */{
+    .imagen {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+       
+        
+    }
+
+    .imagen img{
+        width: 30%;
+        margin-top: 40px;
+       }
+}
+
+@media (min-width: 768px){ /* ESCRITORIO */
+    .imagen {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+}
+
+.imagen img{
+ width: 20%;
+ margin-top: 15px;
+ margin: auto;
+}
+      
+   
+
+    .contenedor{
+        
+    /* background: rgba(0, 0, 0, .6); */
+    margin: auto ;
+    width: 40%;
+    margin-top: 15px;
+    /* color: white; */
+    /* border-radius: 10px; */
+    }
+
+}
